@@ -28,5 +28,14 @@ public class Main {
         System.out.println("\n***Effacement d'un document par identifiant (ID: 2) ***");
         bibliotheque.effacerDocumentParId(2);
 
+        System.out.println("\n***Test exceptional:***");
+        bibliotheque.ajouterDocument(new Documents.Revue(1, "test try catch", "test"));
+        bibliotheque.emprunterDocument(5);
+        bibliotheque.retournerDocument(2);
+        Bibliotheque bibliothequeTest = new Bibliotheque();
+        bibliothequeTest.sortDocumentsParId();
+        bibliotheque.rechercherDocumentParID(9);
+        bibliotheque.effacerDocumentParId(99);
+
     }
 }
