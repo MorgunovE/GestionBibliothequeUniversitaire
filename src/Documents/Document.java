@@ -13,6 +13,30 @@ public abstract class Document {
         this.emprunte = false;
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public String getTitre() {
+        return titre;
+    }
+
+    public String getAuteur() {
+        return auteur;
+    }
+
+    public int setId(int id) {
+        return this.id = id;
+    }
+
+    public String setTitre(String titre) {
+        return this.titre = titre;
+    }
+
+    public String setAuteur(String auteur) {
+        return this.auteur = auteur;
+    }
+
     public void emprunter() {
         if(!emprunte) {
             emprunte = true;
@@ -21,7 +45,7 @@ public abstract class Document {
         }
     }
 
-    public void returner() {
+    public void retourner() {
         if(emprunte) {
             emprunte = false;
         } else {
