@@ -1,3 +1,5 @@
+package Documents;
+
 public abstract class Document {
     protected int id;
     protected String titre;

@@ -1,3 +1,5 @@
+package Documents;
+
 public class ArticleDeRecherche extends Document {
     public ArticleDeRecherche(int id, String titre, String auteur) {
         super(id, titre, auteur);
