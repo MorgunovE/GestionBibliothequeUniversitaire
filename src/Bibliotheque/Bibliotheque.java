@@ -5,14 +5,25 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
-
+/**
+ * Classe représentant une bibliothèque contenant des documents.
+ */
 public class Bibliotheque {
     private List<Document> documents;
 
+    /**
+     * Constructeur de la classe Bibliotheque.
+     * Initialise la liste des documents.
+     */
     public Bibliotheque() {
         this.documents = new ArrayList<>();
     }
 
+    /**
+     * Ajoute un document à la bibliothèque.
+     *
+     * @param document Le document à ajouter.
+     */
     public void ajouterDocument(Document document) {
         try {
             if (!documents.isEmpty()) {
@@ -29,6 +40,11 @@ public class Bibliotheque {
         }
     }
 
+    /**
+     * Efface un document de la bibliothèque par son identifiant.
+     *
+     * @param id L'identifiant du document à effacer.
+     */
     public void effacerDocumentParId(int id) {
         try {
             if (documents.isEmpty()) {
@@ -60,6 +76,11 @@ public class Bibliotheque {
         }
     }
 
+    /**
+     * Emprunte un document de la bibliothèque par son identifiant.
+     *
+     * @param id L'identifiant du document à emprunter.
+     */
     public void emprunterDocument(int id) {
         try {
             if (documents.isEmpty()) {
@@ -81,6 +102,11 @@ public class Bibliotheque {
         }
     }
 
+    /**
+     * Retourne un document de la bibliothèque par son identifiant.
+     *
+     * @param id L'identifiant du document à retourner.
+     */
     public void retournerDocument(int id) {
         try {
             if (documents.isEmpty()) {
@@ -102,6 +128,9 @@ public class Bibliotheque {
         }
     }
 
+    /**
+     * Affiche tous les documents de la bibliothèque.
+     */
     public void afficherDocuments() {
         try {
             if (documents.isEmpty()) {
@@ -116,6 +145,9 @@ public class Bibliotheque {
         }
     }
 
+    /**
+     * Trie les documents de la bibliothèque par identifiant.
+     */
     public void sortDocumentsParId() {
         try {
             if (documents.isEmpty()) {
@@ -131,6 +163,11 @@ public class Bibliotheque {
         }
     }
 
+    /**
+     * Recherche un document dans la bibliothèque par son identifiant.
+     *
+     * @param id L'identifiant du document à rechercher.
+     */
     public void rechercherDocumentParID(int id) {
         try {
             if (documents.isEmpty()) {
