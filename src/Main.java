@@ -6,7 +6,16 @@ import Documents.Revue;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+/**
+ * Classe principale pour exécuter l'application de gestion de bibliothèque.
+ */
 public class Main {
+
+    /**
+     * Méthode principale pour exécuter l'application.
+     *
+     * @param args Les arguments de la ligne de commande.
+     */
     public static void main(String[] args) {
 
         Bibliotheque bibliotheque = new Bibliotheque();
