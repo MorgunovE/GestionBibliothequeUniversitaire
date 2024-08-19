@@ -158,4 +158,5 @@ public class Bibliotheque {
             System.out.println("Erreur lors de la recherche du document: " + e.getMessage());
         }
     }
+
 }

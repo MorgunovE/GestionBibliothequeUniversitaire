@@ -25,6 +25,10 @@ public abstract class Document {
         return auteur;
     }
 
+    public boolean estEmprunte() {
+        return emprunte;
+    }
+
     public int setId(int id) {
         return this.id = id;
     }
