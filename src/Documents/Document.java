@@ -10,9 +10,15 @@ public abstract class Document {
         if (id < 1) {
             throw new IllegalArgumentException("L'ID doit être supérieur à 0.");
         }
+        if (titre == null || titre.trim().isEmpty()) {
+            throw new IllegalArgumentException("Le titre ne peut pas être vide.");
+        }
+        if (auteur == null || auteur.trim().isEmpty()) {
+            throw new IllegalArgumentException("L'auteur ne peut pas être vide.");
+        }
         this.id = id;
-        this.titre = titre;
-        this.auteur = auteur;
+        this.titre = titre.trim();
+        this.auteur = auteur.trim();
         this.emprunte = false;
     }
 
@@ -40,10 +46,16 @@ public abstract class Document {
     }
 
     public String setTitre(String titre) {
+        if (titre == null || titre.trim().isEmpty()) {
+            throw new IllegalArgumentException("Le titre ne peut pas être vide.");
+        }
         return this.titre = titre;
     }
 
     public String setAuteur(String auteur) {
+        if (auteur == null || auteur.trim().isEmpty()) {
+            throw new IllegalArgumentException("L'auteur ne peut pas être vide.");
+        }
         return this.auteur = auteur;
     }
 
