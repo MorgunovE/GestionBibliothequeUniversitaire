@@ -66,6 +66,7 @@ public abstract class Document {
         } else {
             System.out.println("Le document " + titre + " est déjà emprunté.");
         }
+        System.out.println("Détails le document : " + this);
     }
 
     public void retourner() {
@@ -75,6 +76,7 @@ public abstract class Document {
         } else {
             System.out.println("Le document " + titre + " n'est pas emprunté.");
         }
+        System.out.println("Détails le document : " + this);
     }
 
     @Override

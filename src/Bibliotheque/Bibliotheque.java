@@ -67,13 +67,11 @@ public class Bibliotheque {
                 return;
             } else if (documents.size() == 1 && documents.getFirst().getId() == id) {
                 documents.getFirst().emprunter();
-                System.out.println("Détails le document : " + documents.getFirst());
                 return;
             }
             for(Document document : documents) {
                 if(document.getId() == id) {
                     document.emprunter();
-                    System.out.println("Détails le document : " + document);
                     return;
                 }
             }
@@ -90,13 +88,11 @@ public class Bibliotheque {
                 return;
             } else if (documents.size() == 1 && documents.getFirst().getId() == id) {
                 documents.getFirst().retourner();
-                System.out.println("Détails le document : " + documents.getFirst());
                 return;
             }
             for(Document document : documents) {
                 if(document.getId() == id) {
                     document.retourner();
-                    System.out.println("Détails le document : " + document);
                     return;
                 }
             }
