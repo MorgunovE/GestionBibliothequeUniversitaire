@@ -36,6 +36,10 @@ public class Main {
 
         System.out.println("\n***Test exceptional:***");
         bibliotheque.ajouterDocument(new Documents.Revue(1, "test try catch", "test"));
+        bibliotheque.emprunterDocument(1);
+        bibliotheque.emprunterDocument(1);
+        bibliotheque.retournerDocument(1);
+        bibliotheque.retournerDocument(1);
         bibliotheque.emprunterDocument(5);
         bibliotheque.retournerDocument(2);
         Bibliotheque bibliothequeTest = new Bibliotheque();

@@ -44,16 +44,18 @@ public abstract class Document {
     public void emprunter() {
         if(!emprunte) {
             emprunte = true;
+            System.out.println("Le document [" + titre + "] a été emprunté.");
         } else {
-            System.out.println("Le document est déjà emprunté.");
+            System.out.println("Le document " + titre + " est déjà emprunté.");
         }
     }
 
     public void retourner() {
         if(emprunte) {
             emprunte = false;
+            System.out.println("Le document [" + titre + "] a été retourné.");
         } else {
-            System.out.println("Le document n'est pas emprunté.");
+            System.out.println("Le document " + titre + " n'est pas emprunté.");
         }
     }
 
