@@ -7,6 +7,9 @@ public abstract class Document {
     protected boolean emprunte;
 
     public Document(int id, String titre, String auteur) {
+        if (id < 1) {
+            throw new IllegalArgumentException("L'ID doit être supérieur à 0.");
+        }
         this.id = id;
         this.titre = titre;
         this.auteur = auteur;
@@ -30,6 +33,9 @@ public abstract class Document {
     }
 
     public int setId(int id) {
+        if (id < 1) {
+            throw new IllegalArgumentException("L'ID doit être supérieur à 0.");
+        }
         return this.id = id;
     }
 
