@@ -36,6 +36,7 @@ public class Main {
 
         System.out.println("\n***Test exceptional:***");
         bibliotheque.ajouterDocument(new Documents.Revue(1, "test try catch", "test"));
+        bibliotheque.ajouterDocument(new Documents.Revue(999, "                        test try catch", "                                      test"));
         bibliotheque.emprunterDocument(1);
         bibliotheque.emprunterDocument(1);
         bibliotheque.retournerDocument(1);
@@ -43,6 +44,8 @@ public class Main {
         bibliotheque.emprunterDocument(5);
         bibliotheque.retournerDocument(2);
         Bibliotheque bibliothequeTest = new Bibliotheque();
+        bibliothequeTest.sortDocumentsParId();
+        bibliothequeTest.ajouterDocument(new Documents.Livre(5, "test", "test"));
         bibliothequeTest.sortDocumentsParId();
         bibliotheque.rechercherDocumentParID(9);
         bibliotheque.effacerDocumentParId(99);
